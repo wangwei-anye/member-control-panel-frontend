@@ -1,0 +1,53 @@
+@charset "utf-8";
+.p-integral-division-activity-wrap {
+  padding: 24px;
+}
+
+.p-integral-division-task-wrap {
+  padding: 24px;
+}
+
+.p-integral-division-detail-wrap {
+  padding: 24px;
+  .ant-form-item-label {
+    text-align: left;
+  }
+  .upload-text {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+  }
+  .upload-hint {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.43);
+  }
+  .ant-form-item-children > span {
+    display: inline-block;
+    width: 384px;
+  }
+  // 目的是为了能让选择时间能遮住日期选择框
+  // .ant-calendar-time-picker-select {
+  //   height: 350px;
+  // }
+  .ant-upload-list {
+    margin-top: 16px;
+  }
+  .footer {
+    position: relative;
+    padding-top: 20px;
+    text-align: right;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -33px;
+      right: -33px;
+      height: 1px;
+      background-color: #e8e8e8;
+    }
+    .btn {
+      margin-left: 10px;
+    }
+  }
+}

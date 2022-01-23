@@ -1,0 +1,80 @@
+@charset "utf-8";
+// 各种状态less
+.u-status {
+  display: inline-block;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  // 发放中
+  &.status-give::before {
+    background-color: #52c41a;
+  }
+  // 审批中
+  &.status-approve::before {
+    background-color: #1890ff;
+  }
+  // 驳回，拒绝
+  &.status-reject::before {
+    background-color: #f5222d;
+  }
+  // 停发
+  &.status-stop::before {
+    background-color: #f5222d;
+  }
+  // 即将开始
+  &.status-soon::before {
+    background-color: #faad14;
+  }
+  // 已失效
+  &.status-lose::before {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  // 未完成
+  &.status-undone::before {
+    background-color: #722ed1;
+  }
+  // 進行中
+  &.status-doing::before {
+    background-color: #52c41a;
+  }
+}
+.m-operation-wrap {
+  .u-operation-item {
+    display: inline-block;
+    margin-right: 8px;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 0.9em;
+      margin-left: 8px;
+      vertical-align: middle;
+      background-color: #e8e8e8;
+    }
+  }
+  > span:last-child .u-operation-item:last-child,
+  > .u-operation-item:last-child {
+    &::after {
+      display: none;
+    }
+  }
+  .u-color-red {
+    color: #f5222d;
+  }
+  .u-color-blue {
+    color: #1890ff;
+  }
+  .u-color-dark {
+    color: #b1b1b7;
+  }
+
+  .u-color-green {
+    color: #52c41a;
+  }
+}

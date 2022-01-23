@@ -1,0 +1,59 @@
+/* 侧边导航 */
+#common-sidebar {
+  &.ant-layout-sider {
+    background-color: rgb(255, 255, 255);
+    min-height: 100%;
+    > .ant-layout-sider-children {
+      width: 100%;
+      overflow-y: auto;
+    }
+  }
+  &.ant-layout-sider-collapsed {
+    .ant-menu-item-group-title {
+      width: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .nav-text {
+      display: none;
+    }
+  }
+  .ant-menu-item {
+    margin: 0;
+  }
+  .ant-menu-item-selected,
+  .ant-menu-item:hover {
+    background-color: rgba(230, 247, 255, 1);
+    &::after {
+      border-right-color: #1890ff;
+    }
+    a {
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  .ant-layout-sider-trigger {
+    background-color: rgb(214, 223, 230);
+    color: #969696;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  ul {
+    /* background-color: transparent; */
+  }
+  a {
+    font-size: 14px;
+  }
+  .anticon {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 15px;
+    /* color: rgb(55, 143, 205); */
+  }
+  .nav-text {
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,79 @@
+.sex-chart {
+  min-height: 304px;
+}
+
+.coin-member-chart,
+.register-method-chart {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 260px;
+  width: 260px;
+}
+
+.common__chart {
+  &__title {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    margin: 0 -24px;
+    margin-bottom: 4px;
+    border-left: 3px solid #1890ff;
+    padding-left: 21px;
+    padding-right: 24px;
+  }
+}
+
+.register-method-chart-wrap,
+.coin-member-chart-wrap {
+  height: 304px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.coin-member__legend,
+.register-method__legend {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 22px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    & + & {
+      margin-top: 16px;
+    }
+  }
+  &__icon,
+  &__name,
+  &__seperator,
+  &__per,
+  &__value {
+    display: flex;
+    flex-wrap: nowrap;
+    word-wrap: none;
+    white-space: nowrap;
+  }
+  &__icon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  &__name {
+    color: rgba(0, 0, 0, 0.65);
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 64px;
+  }
+  &__seperator {
+    color: #d9d9d9;
+    margin-right: 8px;
+  }
+  &__per {
+    width: 50px;
+    margin-right: 24px;
+  }
+}

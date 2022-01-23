@@ -1,0 +1,199 @@
+@charset 'utf-8';
+
+.p-finance-common-wrap {
+  .approve-flow {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+    height: 80px;
+    padding-top: 30px;
+    .approve-flow-item {
+      &:nth-child(1) {
+        margin-left: 20px;
+      }
+      float: left;
+      margin-left: 50px;
+      .item-title {
+        color: rgba(0, 0, 0, 0.45);
+      }
+      .item-value {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+      }
+      .btn {
+        margin-left: 5px;
+      }
+    }
+    .status-item {
+      position: relative;
+      bottom: 15px;
+    }
+  }
+  .detail-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    .detail-info-wrap {
+      flex: 1;
+      margin-right: 50px;
+      .detail-no {
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.85);
+        padding-bottom: 18px;
+      }
+      .info-item-wrap {
+        display: flex;
+        margin-bottom: 8px;
+        .info-item {
+          display: flex;
+          align-items: flex-start;
+          width: 1px;
+          flex: 1;
+          color: rgba(0, 0, 0, 0.85);
+          .item-title {
+            display: block;
+            width: 130px;
+          }
+          .item-value {
+            flex: 1;
+            padding-right: 10px;
+            display: block;
+            color: rgba(0, 0, 0, 0.65);
+            b {
+              display: inline-block;
+              margin: 0 5px;
+            }
+          }
+          .preview {
+            color: #1890ff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .item-adjunct-content {
+      width: 200px;
+      cursor: pointer;
+      color: #333;
+      position: relative;
+      height: 66px;
+      padding: 8px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      .picture-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        line-height: 54px;
+        text-align: center;
+      }
+      .name {
+        display: inline-block;
+        padding-right: 8px;
+        max-width: 100%;
+        margin: 0 0 0 8px;
+        padding-right: 8px;
+        padding-left: 48px;
+        overflow: hidden;
+        line-height: 44px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .detail-status-wrap {
+      text-align: right;
+      .btn {
+        margin-left: 8px;
+      }
+      .status-info-wrap {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .info-item-wrap {
+          margin-left: 34px;
+        }
+        .item-title {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+        .item-value {
+          margin-top: 5px;
+          font-size: 20px;
+          color: rgba(0, 0, 0, 0.85);
+        }
+      }
+    }
+  }
+  .ant-table-body .ant-table-thead {
+    tr:last-child:not(:first-child) {
+      th {
+        border-bottom: 1px solid #e8d8e8;
+      }
+    }
+  }
+}
+.approve-modal-wrap {
+  .approve-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding: 0 32px;
+    .item-name {
+      width: 80px;
+      margin-right: 32px;
+      text-align: right;
+      &.star-mark::before {
+        content: '*';
+        color: #f5222d;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        margin-right: 3px;
+      }
+    }
+    .item-value {
+      flex: 1;
+    }
+  }
+}
+.p-BU-trend-chart-wrap {
+  .m-trent-item-wrap {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .m-select-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .day-type-select-wrap {
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        &.disabled {
+          cursor: wait;
+        }
+        .item {
+          display: inline-block;
+          margin-left: 24px;
+          color: rgba(0, 0, 0, 0.65);
+          &.s-active {
+            color: #1890ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-col.ant-col-4.ant-form-item-label {
+  text-align: left;
+}

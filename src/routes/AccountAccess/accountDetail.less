@@ -1,0 +1,35 @@
+@charset 'utf-8';
+.account-detail-wrap {
+  .detail-header-wrap {
+    display: flex;
+    justify-content: space-between;
+    .detail-header-item {
+      display: flex;
+      align-items: flex-start;
+      .header-detail-wrap {
+        margin-left: 10px;
+        & > div {
+          margin-bottom: 2px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .name-role {
+        display: flex;
+        align-items: flex-start;
+      }
+      .name-wrap {
+        .name-cn {
+          font-size: 18px;
+          color: #333;
+          margin-top: -5px;
+        }
+        .name-en {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+}

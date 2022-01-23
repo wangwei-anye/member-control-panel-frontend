@@ -1,0 +1,62 @@
+@charset "utf-8";
+.p-approve-set-wrap {
+  overflow: hidden;
+  width: 100%;
+  .approve-set-content {
+    .list-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 14px;
+      .item-title {
+        width: 120px;
+        margin-right: 32px;
+      }
+      .item-value-wrap {
+        flex: 1;
+        position: relative;
+        .tips {
+          margin-top: 10px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+    }
+  }
+  .footer-wrap {
+    text-align: right;
+    position: relative;
+    padding-top: 24px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -32px;
+      right: -32px;
+      height: 1px;
+      background-color: #e8e8e8;
+    }
+    button {
+      margin-left: 8px;
+    }
+  }
+}
+
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail {
+  height: unset;
+}
+
+/* tile uploaded pictures */
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}

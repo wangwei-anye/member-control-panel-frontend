@@ -1,0 +1,162 @@
+@import './assets/less/index.less';
+@icon-url: '/static/iconfont/iconfont';
+
+#root {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  & > div[data-reactroot] {
+    width: 100%;
+  }
+}
+#common-page {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #fff;
+  .ant-layout {
+    background-color: transparent;
+  }
+  & > .ant-layout-header {
+    background-color: transparent;
+  }
+  #common-main-wrapper {
+    background-color: rgb(240, 244, 247);
+    & > .breadcrubm {
+      font-size: 14px;
+    }
+    .ant-upload-list-item-info > span {
+      height: 100%;
+    }
+    // 目的是为了能让选择时间能遮住日期选择框
+    // .ant-calendar-time-picker-select {
+    //   height: 350px;
+    // }
+  }
+  .ant-card-wider-padding .ant-card-head {
+    padding: 0 15px;
+    min-height: 0;
+  }
+  .ant-card-head-title {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    i {
+      font-size: 18px;
+    }
+  }
+  .ant-card-extra {
+    padding: 10px 0;
+  }
+  .logo-wrap h1 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    padding: 14px 0 14px 20px;
+    white-space: nowrap;
+    margin-bottom: 0;
+    .logo-img {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+    }
+    .logo-text {
+      height: 22px;
+      line-height: 22px;
+      display: inline-block;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 1);
+      font-weight: 500;
+      margin-left: 10px;
+    }
+  }
+  .nav-bread-wrap {
+    background-color: #fff;
+    height: 64px;
+    box-shadow: 1px 1px 0px 0px rgba(232, 232, 232, 1);
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    border: 1px solid #e8e8e8;
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+    z-index: 2;
+    .ant-breadcrumb {
+      & > span {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.45);
+        &:last-child {
+          font-size: 24px;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .ant-pagination-item-active {
+    background-color: #1890ff;
+    a {
+      color: #fff;
+    }
+  }
+  .ant-card-wider-padding .ant-card-body {
+    padding: 20px;
+  }
+
+  .ant-statistic {
+    color: rgba(0, 0, 0, 0.45);
+
+    .ant-statistic-content-value {
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  // static 數據展示
+  .ant-statistic-content {
+    font-size: 30px;
+  }
+}
+
+.common-main-content-padding {
+  padding: 24px;
+}
+
+#common-main-footer {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background: #eff5f9;
+}
+
+.flex {
+  display: flex;
+}
+
+#common-main-content {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 24px;
+}
+
+.ant-pagination-prev, .ant-pagination-next, .ant-pagination-item {
+  border: none !important;
+  .ant-pagination-item-link {
+    border: none !important;
+  }
+}
+// .ant-calendar-range.ant-calendar-time .ant-calendar-time-picker-panel {
+//   height: 390px;
+// }
+
+// .ant-form-item-control.has-error {
+//   position: absolute !important;
+//   width: 100%;
+// }
+
+
+.ant-dragger.hide .ant-upload.ant-upload-drag {
+  display: none !important;
+}

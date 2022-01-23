@@ -1,0 +1,39 @@
+{
+  "presets": [
+    "react",
+    "env",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "lazy-dynamic-import-webpack",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "assets": "./src/assets",
+        "components": "./src/components",
+        "config": "./src/config",
+        "models": "./src/models",
+        "routes": "./src/routes",
+        "services": "./src/services",
+        "utils": "./src/utils"
+      }
+    }],
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ],
+  "env": {
+    "development": {
+      "plugins": ["dva-hmr"],
+      "presets": ["react-hmre"]
+    },
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  }
+}

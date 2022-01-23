@@ -1,0 +1,45 @@
+.summary-table {
+  display: flex;
+  flex-direction: row;
+  &__title {
+    height: 22px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  &__item {
+    line-height: 38px;
+    & + & {
+      margin-top: 16px;
+    }
+    .summary-table__time {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.45);
+      font-weight: normal;
+    }
+    .summary-table__value {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 30px;
+    }
+  }
+  &__value {
+    text-align: right;
+  }
+  &__total {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    .summary-table__time {
+      text-align: right;
+      margin-bottom: 4px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+    .summary-table__value {
+      color: #1890ff;
+      font-size: 30px;
+    }
+  }
+}

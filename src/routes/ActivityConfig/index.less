@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+// 活动list
+.p-activity-config-list-wrap {
+  .m-operation-wrap-box {
+    .m-operation-wrap {
+      display: block;
+      .u-operation-item {
+        margin-right: 5px !important;
+      }
+    }
+  }
+
+  .m-link-btn {
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0px 3px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    text-align: center;
+
+    .title {
+      display: inline-block;
+      margin-left: 4px;
+      font-size: 13px;
+    }
+
+    &.disabled {
+      background: #eee;
+
+      &:hover {
+        border-color: #999;
+        cursor: not-allowed;
+      }
+    }
+
+    &:hover {
+      border-color: #1890ff;
+    }
+  }
+}
+
+// 活动配置
+.p-activity-config-detail-wrap {
+  .bg-item {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+
+    &.s-active {
+      &::after {
+        position: absolute;
+        content: '';
+        top: 46%;
+        left: 50%;
+        width: 18px;
+        height: 10px;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        border: 4px solid #fff;
+        border-top: none;
+        border-right: none;
+      }
+    }
+
+    &-border {
+      border: 1px solid #ccc;
+
+      &.s-active {
+        &::after {
+          border-color: #1890ff;
+        }
+      }
+    }
+  }
+
+  .m-footer {
+    margin-top: 30px;
+    text-align: right;
+
+    .ant-btn {
+      margin-left: 10px;
+    }
+  }
+}
+
+.ant-col.ant-col-6.ant-form-item-label {
+  text-align: left;
+}
+
+.insert-red-star > .ant-col.ant-col-4.ant-form-item-label ::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+//答題統計
+.p-activity-config-statistics-wrap {
+  .question-list {
+    .no-data {
+      text-align: center;
+      font-size: 20px;
+      margin: 20px auto;
+    }
+    .item {
+      .title {
+        height: 22px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.57;
+        letter-spacing: normal;
+        color: rgba(0, 0, 0, 0.65);
+        margin: 16px 24px;
+      }
+      .table-title {
+        width: 100%;
+        height: 54px;
+        border-radius: 4px;
+        background-color: #fafafa;
+        font-weight: bold;
+        div {
+          float: left;
+          height: 22px;
+          line-height: 22px;
+        }
+        .txt {
+          margin: 16px 0;
+          padding-left: 24px;
+          width: 35%;
+          box-sizing: border-box;
+        }
+        .num {
+          margin: 16px 0;
+          width: 15%;
+        }
+        .rate {
+          margin: 16px 0;
+          width: 45%;
+          .Info-circle {
+            font-size: 16px;
+            margin-left: 15px;
+          }
+        }
+      }
+      .table-data {
+        overflow: hidden;
+        padding-bottom: 17px;
+        .table-item {
+          overflow: hidden;
+          height: 60px;
+          position: relative;
+          .txt {
+            width: 35%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 17px;
+            left: 24px;
+          }
+          .num {
+            width: 15%;
+            position: absolute;
+            top: 17px;
+            left: 35%;
+          }
+          .rate {
+            position: absolute;
+            top: 17px;
+            left: 50%;
+            width: 45%;
+          }
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background-color: #f0f2f5;
+        margin: 1px 0;
+      }
+      .count {
+        margin: 17px 0;
+        overflow: hidden;
+        div {
+          float: left;
+          height: 22px;
+          line-height: 22px;
+        }
+        .txt {
+          color: rgba(0, 0, 0, 0.45);
+          padding-left: 24px;
+          width: 35%;
+          box-sizing: border-box;
+        }
+        .num {
+          width: 15%;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+//題庫管理
+.question-modal {
+  width: 100%;
+  .ant-col.ant-col-8.ant-form-item-label {
+    text-align: right !important;
+  }
+}

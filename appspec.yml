@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /srv/hk01-member-system-frontend
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/configure.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/service.sh
+      timeout: 300
+      runas: ubuntu
+  # ValidateService:
+  #   - location: scripts/verify.sh
+  #     timeout: 300
+  #     runas: ubuntu
